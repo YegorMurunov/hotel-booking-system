@@ -13,7 +13,7 @@ public class Main {
         // Кімната Suite (500.0/доба), 3 дні, високий сезон (+20%), VIP-гість (-10%).
         // Базова ціна: 500 * 3 = 1500.
         // Високий сезон: 1500 * 1.2 = 1800.
-        // Знижка VIP: 1800 - 10% = 1620.0
+        // Знижка VIP: Знижка не застосовується, тому що високий сезон
         Booking vipBooking = new Booking(RoomType.SUITE, 3, true, true);
         System.out.println("2. Бронювання VIP у високий сезон (Suite, 3 дні):");
         System.out.println("До сплати: $" + vipBooking.calculatePrice() + "\n");
