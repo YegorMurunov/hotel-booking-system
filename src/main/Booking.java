@@ -31,7 +31,10 @@ public class Booking {
 
         // Застосування націнок та знижок
         price = applySeasonMultiplier(price);
-        price = applyDiscounts(price);
+
+        if (!isHighSeason) {
+            price = applyDiscounts(price);
+        }
 
         return price;
     }
